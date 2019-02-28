@@ -1,12 +1,12 @@
-#include<iostream>
+﻿#include<iostream>
 
 using namespace std;
 const int N=13;
 char isbn[N];
-
+//编码格式测试
 int main(){
 	int sum=0;
-	int s;//ʶ���� 
+	int s;
 	for(int i=0;i<N;i++)
 		cin>>isbn[i];
 	sum+=(isbn[0]-'0')
