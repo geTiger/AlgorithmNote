@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<string>
 
 using namespace std;
 
@@ -14,12 +15,12 @@ int main(){
 		getline(cin,str);
 		int length=str.length();
 		for(int j=0;j<length;j++){
-			if(str[j]!='P'&&str[j]=='A'&& str[j]=='T'){
+			if(str[j]!='P'&&str[j]!='A'&& str[j]!='T'){
 				hasNo=true;
 				cout<<"NO"<<endl;
 				break;
 			}//end if
-			if(str[j]=='P'||str[j]!='A'|| str[j]!='T'){
+			if(str[j]=='P'||str[j]=='A'|| str[j]=='T'){
 				switch(str[j]){
 					case 'P':{flag=2;p++;break;}
 					case 'T':{flag=3;t++;break;}
@@ -39,7 +40,8 @@ int main(){
 		else{
 			if(hasNo==false)
 				cout<<"NO"<<endl;
-		}	
+		}
+		
 	}//end for out
 
 	return 0;
